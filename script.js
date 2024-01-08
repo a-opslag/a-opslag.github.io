@@ -1,5 +1,5 @@
 var a = "ewogICAgInJlZGFjdGllc29tbWVuIjogewogICAgICAgICIxMi8xIjogWyI0NiIsICIyNTAwIiwgIjEyMCIsICIxMSIsICI1NTMwIiwgIjYiLCAiODgiLCAiODY1ODUzIiwgIjEwIiwgIjM0Il0KICAgIH0KfQ==";
-var uc = "ewogICAgImltcmFuZnJlZSI6ICJyZWRhY3RpZXNvbW1lbi4xMi8xIgp9";
+var uc = "ewogICAgImltcmFuZnJlZSI6ICJyZWRhY3RpZXNvbW1lbi4xMi8xIiwKICAgICJJbXJhbmZyZWUiOiAicmVkYWN0aWVzb21tZW4uMTIvMSIKfQ==";
 
 document.addEventListener('contextmenu', event => event.preventDefault());
 
