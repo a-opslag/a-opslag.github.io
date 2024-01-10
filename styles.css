@@ -9,8 +9,10 @@ body {
     background: linear-gradient(0deg, rgba(61,61,61,1) 0%, rgba(37,37,37,1) 100%);
 }
 
-.container {
+.flex {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .icon {
@@ -26,7 +28,7 @@ p, h2{
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
+    margin: 0 10px 20px 10px;
     padding: 20px;
     text-align: center;
 }
@@ -38,4 +40,16 @@ p, h2{
 .title {
     margin: 0;
     color: #333;
+}
+
+@media (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
