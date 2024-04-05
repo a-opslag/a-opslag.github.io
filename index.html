@@ -10,15 +10,19 @@
 <body>
 
     <div class="flex">
-        <a href="javascript:(function()%7Bif%20(window.location.href.indexOf(%22groep%22)%20%3E%20-1)%20%7B%20document.getElementById(%22AntwoordValue%22).value%20%3D%20JuisteAntwoorden%5BJuisteAntwoorden.length%20-%201%5D%3B%20document.getElementById(%22Nakijken%22).click()%3B%20%7D%20else%20if%20(window.location.href.indexOf(%22choose_taak%22)%20%3E%20-1)%7B%20document.getElementById(%22AntwoordValue%22).value%20%3D%20taak%5B%22opgave%22%20%2B%20OpgaveNummer%5D.GoedAntwoord%3B%20document.getElementById(%22Nakijken%22).click()%3B%20%7D%20else%20%7B%20alert(%22Ongeldige%20webpagina!%22)%3B%20%7D%7D)()%3B">BFRS</a>
-        <a href="antwoorden.html" class="card">
+        <!-- <a href="antwoorden.html" class="card">
             <i class="material-icons icon" style="font-size: 120px; color: black;">feed</i>
             <h2 class="title">Antwoorden</h2>
         </a>
         <a href="code.html" class="card">
             <i class="material-icons icon" style="font-size: 120px; color: black;">pin</i>
             <h2 class="title">Code Gebruiken</h2>
+        </a> -->
+
+        <a class="card" href="javascript:(function()%7Bif%20(window.location.href.indexOf(%22groep%22)%20%3E%20-1)%20%7B%0A%20%20%20%20document.getElementById(%22AntwoordValue%22).value%20%3D%20JuisteAntwoorden%5BJuisteAntwoorden.length%20-%201%5D%3B%0A%20%20%20%20document.getElementById(%22Nakijken%22).click()%3B%0A%7D%20else%20if%20(window.location.href.indexOf(%22spellingoefenen.nl%2Ftaken.php%22)%20%3E%20-1)%20%7B%0A%20%20%20%20if%20(document.getElementById(%22game_3%22).contentWindow.gameType%20%3D%3D%20%22dictee%22)%20%7B%0A%20%20%20%20%20%20%20%20goodword%20%3D%20document.getElementById(%22game_3%22).contentWindow.spelWord%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20goodword%20%3D%20document.getElementById(%22game_3%22).contentWindow.wl%5Bdocument.getElementById(%22game_3%22).contentWindow.game%5B%22wl%22%5D%5D.answer%3B%0A%20%20%20%20%7D%0A%20%20%20%20for%20(let%20i%20%3D%200%3B%20i%20%3C%20goodword.length%3B%20i%2B%2B)%20%7B%20document.getElementById(%22game_3%22).contentWindow.keyboardKeyPressed(goodword.charAt(i))%3B%20%7D%0A%20%20%20%20document.getElementById(%22game_3%22).contentWindow.keyboardKeyPressed(%22OK%22)%3B%0A%7D%20else%20if%20(window.location.href.indexOf(%22choose_taak%22)%20%3E%20-1)%20%7B%0A%20%20%20%20document.getElementById(%22AntwoordValue%22).value%20%3D%20taak%5B%22opgave%22%20%2B%20OpgaveNummer%5D.GoedAntwoord%3B%0A%20%20%20%20document.getElementById(%22Nakijken%22).click()%3B%0A%7D%20%20else%20%7B%20alert(%22Ongeldige%20webpagina!%22)%3B%20%7D%7D)()%3B">
+            <h2 class="title">BFAM</h2>
         </a>
+
     </div>
 
     <script src="main.js"></script>
